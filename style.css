@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+/* -------- 全体 -------- */
+html {
+    font-size: 14px;
+    color: #333333;
+    scroll-behavior: smooth;
+}
+
+body * {
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+body {
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    background-color: #f9f6f4;
+    margin: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.paler {
+    opacity: 0.3;
+}
+
+/* -------- ヘッダー -------- */
+header {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#top_image {
+    width: 100%;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 3px #333333;
+    line-height: normal;
+}
+
+
+/* -------- ナビ -------- */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ede0d3;
+    width: 300px;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+nav h1 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav li {
+    padding: 10px 0;
+    border-bottom: solid 1px white;
+}
+
+nav li:last-child {
+    border: none;
+}
+
+.flex_div {
+    display: flex;
+}
+
+.active {
+    transform: translateX(0);
+    position: fixed;
+    z-index: 100;
+}
+
+#hamburger_open {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ddc1a8;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px #87756a;
+}
+
+#hamburger_open div {
+    position: absolute;
+    top: 35px;
+    left: 17px;
+    width: 37px;
+    height: 2px;
+    background-color: white;
+}
+
+#hamburger_open div:nth-of-type(1) {
+    top: 20px;
+}
+
+#hamburger_open div:nth-of-type(3) {
+    top: 50px;
+}
+
+#hamburger_close {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: white;
+    background-color: #ddc1a8;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* -------- メイン -------- */
+.steam {
+    background-color: #ede0d3;
+    width: 50%;
+    margin: 0 auto 50px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* -------- メイン セクションの指定 -------- */
+.section {
+    padding: 20px 0 50px;
+    border-bottom: solid 1px #ddc1a8;
+}
+
+.section#howToChoose {
+    border-bottom: none;
+}
+
+.contents_title {
+    border-left: solid 10px #ddc1a8;
+    padding-left: 10px;
+}
+
+.subtitle {
+    color: #ede0d3;
+    font-weight: bold;
+}
+
+.point_word {
+    border-bottom: solid 5px #ddc1a8;
+}
+
+/* -------- メイン インストラクションの指定 -------- */
+.instruction_wrapper{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.instruction {
+    width: 25%;
+    padding: 15px;
+    text-align: center;
+}
+
+.instruction:first-child {
+    padding-left: 0;
+}
+
+.instruction:last-child {
+    padding-right: 0;
+}
+
+.caption {
+    height: 60px;
+}
+
+.square {
+    width: 80%;
+    margin: 15px auto 10px;
+    background-color: white;
+    border-radius: 10%;
+    padding: 5%;
+    box-shadow: 0px 3px 5px #ede0d3;
+}
+
+.square img {
+    width: 100%;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border: solid 15px;
+    border-color: transparent transparent transparent  #ede0d3;
+    margin: auto;
+}
+
+.comment {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* -------- #whatIs -------- */
+#whatIs_img_wrapper {
+    width: 20%;
+    margin: 0 auto 30px;
+}
+
+#whatIs_img_wrapper img {
+    width: 100%;
+}
+
+/* -------- #howToUse -------- */
+#howToUse_img_wrapper {
+    width: 40%;
+    margin: 0 auto 50px;
+}
+#howToUse_img_wrapper img {
+    width: 100%;
+}
+#howToUse_img_wrapper p {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* -------- #howToChoose -------- */
+h3 {
+    margin-top: 10px;
+}
+
+.howToChoose_text_wrapper {
+    margin-bottom: 30px;
+}
+
+/* -------- フッター -------- */
+footer {
+    background-color: #ddc1a8;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
